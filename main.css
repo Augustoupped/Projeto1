@@ -1,30 +1,38 @@
 * { 
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-header, section h2 {
-     font-family: "Bungee", cursive;
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: "Bungee", cursive;
+    font-weight: normal;
 }
-body {
+
+body, input, textarea {
     font-family: "Roboto", sans-serif;
 }
+
 header {
     padding: 16px 0;
     background-color: rgb(45, 20, 59);
     color: rgb(214, 196, 196);
 }
 
-header h1, section h2{
+header h1, section h2 {
     font-weight: normal;
 }
-header nav li{
+
+header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-header nav li a{
+header nav li a {
     color: aliceblue;
     text-decoration: none;        
 }
@@ -34,65 +42,111 @@ header nav li a{
     width: 100%;
     margin: 0 auto;
 
- }
+}
 
- .container header,
- section .container {
+header .container,
+section .container {
     display: flex;
-    margin-right: 8px;
+    margin-right: center;
     align-items: center;
     justify-content: space-between;
- }
+}
 
- .brands-list img {
+.brands-list img {
     height: 24px;
- }
+}
 
- .brands-list l1 {
+.brands-list li {
     display: inline;
-    margin: right 8px;
- }
+    margin-right:  8px;
+}
 
- section.container{
+section.container{
     align-items: flex-start;
- }
+}
 
- section{
+section{
     padding: 24px 0;
- }
- section h2{
-    margin-bottom: 16px;
- }
-
- section h2 {
-    margin-bottom: 16px;
- }
-
-section p{
-    margin-bottom: 8px;
-
-}
-section ing {
-    margin-right: 32px;
 }
 
-.social-links img{
-    height: 24px;
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    margin-right: 8px;
+    color: #182c61;
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-right: 24px;
 }
 
 .store-front {
     margin-right: 32px;
 }
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
 #contact .container {
     display:block;
 }
 
 .contact-methods {
     display: flex;
+    justify-content: space-between;
 }
 
-form input, form textarea,
+form input,
+form textarea,
 form button {
     display: block;
     width: 320px;
+    margin-bottom: 8px;
+    padding: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #303e64;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+
 }
