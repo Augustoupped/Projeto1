@@ -65,7 +65,7 @@ section.container{
     align-items: flex-start;
 }
 
-section{
+section {
     padding: 24px 0;
 }
 
@@ -80,8 +80,13 @@ section {
     margin-bottom: 16px;
 }
 
+section img {
+    margin-right: 32px;
+}
+
 section p {
     margin-right: 24px;
+    margin: 8px;
 }
 
 .store-front {
